@@ -1,0 +1,18 @@
+:root {
+	--primary: #00853c;
+	--white: #ffffff;
+	--text-dark: #595959;
+	--bg-grey: #d4d4d4;
+}
+@font-face {
+  font-family: MSungHK;
+  src: url(../font/MSungHK-Medium.otf);
+}
+@import "_utilities.scss";
+@import "_fullpage.scss";
+@import "_section.scss";
+@import "_info.scss";
+@import "_reservation.scss";
+@import "_card.scss";
+@import "_imgGrid.scss";
+@import "_footer.scss";

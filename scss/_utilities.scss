@@ -1,0 +1,89 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+html {
+  font-size: 16px;
+}
+body {
+  font-family: MSungHK, "微軟正黑體", "Microsoft JhengHei", "Century Gothic",
+    CenturyGothic, AppleGothic, sans-serif;
+}
+img {
+  display: block;
+}
+h1 {
+  font-family: MSungHK, "微軟正黑體", "Microsoft JhengHei", "Century Gothic",
+    CenturyGothic, AppleGothic, sans-serif;
+  font-weight: 600;
+  font-size: 35px;
+  color: #fff;
+  letter-spacing: 0.1px;
+}
+h6 {
+  font-family: MSungHK, "微軟正黑體", "Microsoft JhengHei", "Century Gothic",
+    CenturyGothic, AppleGothic, sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  color: #fff;
+}
+h3 {
+  margin-bottom: 24px;
+  color: #fff;
+  font-size: 32px;
+  text-align: center;
+}
+p {
+  margin: 0;
+}
+.fontHei {
+  font-family: "微軟正黑體", "Microsoft JhengHei", "Century Gothic",
+    CenturyGothic, AppleGothic, sans-serif;
+}
+.d_flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.justify_start {
+  justify-content: flex-start;
+}
+.wrap {
+  flex-wrap: wrap;
+}
+.mt_3 {
+  margin-top: 1.5rem;
+}
+.mt_4 {
+  margin-top: 2rem;
+}
+.mb_3 {
+  margin-bottom: 1.5rem;
+}
+.mb_4 {
+  margin-bottom: 2rem;
+}
+.d_none {
+  display: none !important;
+}
+@media (max-width: 768px) {
+  .d_md_none {
+    display: none !important;
+  }
+  .d_md_block {
+    display: block !important;
+    img {
+      max-width: 100%;
+    }
+  }
+  .d_md_table {
+    display: table !important;
+    img {
+      max-width: 100%;
+    }
+  }
+  .mb_md_0 {
+    margin-bottom: 0;
+  }
+}

@@ -1,0 +1,43 @@
+.img_grid {
+  flex: 1 1 calc(100% - 280px);
+	height: 100vh;
+	display: grid;
+  grid-gap: 4px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr;
+	grid-template-areas:
+		"G1 G1 G2 G2"
+		"G1 G1 G2 G2"
+		"G1 G1 G3 G3"
+		"G1 G1 G3 G3";
+}
+.g_img {
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  overflow: hidden;
+  img {
+    width: auto;
+    height: 100%;
+  }
+}
+.g1_1 {
+  grid-area: G1;
+}
+.g1_2 {
+  grid-area: G2;
+}
+.g1_3 {
+  grid-area: G3;
+}
+.g1_4 {
+  grid-area: G4;
+}
+
+
+.p1img_1 {
+  background-image: url(../images/desktop/s6/g1-1.jpg);
+}
+.p1img_2 {
+  background-image: url(../images/desktop/s6/g1-2.jpg);
+}

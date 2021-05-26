@@ -1,0 +1,70 @@
+.card {
+  padding: 1.5rem;
+  color: #595757;
+  background-color: #fff;
+}
+
+.card_title {
+  margin-bottom: 1.5rem;
+  font-size: 1.6rem;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.card_content {
+  margin-bottom: 1rem;
+  padding: 0 2rem;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.card_gold {
+  padding: 1.5rem;
+  color: #fff;
+  background-color: #BF9D5A;
+  .card_title {
+    margin-top: 2rem;
+    &.extra {
+      margin-top: .5rem;
+    }
+  }
+  .card_content {
+    margin-bottom: 2rem;
+  }
+}
+
+.card_bg_blue {
+  color: #fff;
+  background-color: #183149;
+}
+
+@media (max-width: 480px) {
+  .card,
+  .card_gold {
+    padding: 1rem;
+  }
+
+  .card_title {
+    margin-bottom: 1rem;
+    font-size: 18px;
+  }
+
+  .card_content {
+    padding: 0 1rem;
+    font-size: 12px;
+  }
+
+  .card_gold .card_title {
+    margin-top: 0;
+  }
+  
+  .letter_space {
+    letter-spacing: -2px;
+    &__plus {
+      letter-spacing: -4px;
+    }
+    &__plus2 {
+      letter-spacing: -5px;
+    }
+  }
+}

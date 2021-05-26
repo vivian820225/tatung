@@ -1,0 +1,45 @@
+#fp-nav {
+  top: inherit;
+  bottom: 50px;
+}
+#fp-nav ul li a span {
+  background: #ffffff;
+}
+.fp-controlArrow.fp-next {
+  // background-image: url("../images/Fillet_Right.png");
+  border: none;
+  width: 52px;
+  height: 150px;
+  opacity: 0.5;
+  right: 0;
+}
+
+.fp-controlArrow.fp-prev {
+  // background-image: url("../images/Fillet_Left.png");
+  border: none;
+  width: 52px;
+  height: 150px;
+  opacity: 0.5;
+  left: 0;
+}
+.fp-controlArrow.fp-next:hover {
+  opacity: 1;
+}
+.fp-controlArrow.fp-prev:hover {
+  opacity: 1;
+}
+
+@media screen and (max-width: 1280px) {
+  .fp-controlArrow.fp-next {
+    border-width: 25px 0 25px 21px;
+  }
+  .fp-controlArrow.fp-prev {
+    border-width: 25px 21px 25px 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #fp-nav {
+    display: none;
+  }
+}

@@ -1,0 +1,118 @@
+.Sec_img {
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+// 主視覺
+.Sec0home {
+  height: 100vh;
+  background-image: url(../images/s0bg.jpg);
+  background-position: left bottom;
+}
+
+.Sec3_img {
+  height: 100vh;
+  background-image: url(../images/s3/sec3img01.jpg);
+  background-position: center center;
+}
+@media screen and (max-width: 900px) {
+}
+
+@media screen and (max-width: 768px) {
+  .Sec0home_m {
+    position: relative;
+    height: 100%;
+    background-image: url(../images/m-s0bg.jpg);
+    background-position: center 70%;
+    // &::before {
+    //   content: '';
+    //   display: block;
+    //   width: 20%;
+    //   max-width: 120px;
+    //   height: 200px;
+    //   background-image: url(../images/mobile/m-s0bg-1.png);
+    //   background-repeat: no-repeat;
+    //   background-size: contain;
+    //   position: absolute;
+    //   top: 5%;
+    //   left: 5%;
+    //   z-index: 1;
+    // }
+    // &::after {
+    //   content: '';
+    //   display: block;
+    //   width: 50%;
+    //   max-width: 340px;
+    //   height: 180px;
+    //   background-image: url(../images/mobile/m-s0bg-2.png);
+    //   background-repeat: no-repeat;
+    //   background-size: contain;
+    //   position: absolute;
+    //   top: 5%;
+    //   right: 5%;
+    //   z-index: 1;
+    // }
+  }
+}
+
+@media screen and (max-width: 480px) {
+}
+
+
+@media (orientation: landscape) {}
+@media (orientation: portrait) {}
+
+
+
+
+// 文字區塊
+.title {
+  &__primary {
+    color: var(--primary)
+  }
+}
+.para {
+  color: var(--text-dark);
+}
+.slide_content {
+  max-width: 460px;
+  position: absolute;
+  color: #fff;
+  top: 5rem;
+  &.pos_right {
+    right: 3.5rem;
+  }
+  &.pos_left {
+    left: 3.5rem;
+  }
+  &.pos_bottom {
+    top: initial;
+    bottom: 6rem;
+  }
+  .slide_title {
+    margin-bottom: 1.5rem;
+    font-size: 24px;
+  }
+  .slide_text {
+    font-size: 14px;
+    line-height: 1.8;
+  }
+}
+
+@media screen and (max-width: 768px)  {
+  .card_heading {
+    position: absolute;
+    bottom: 4rem;
+    left: 1.5rem;
+    .slide_heading {
+      font-size: 20px;
+      color: #fff;
+    }
+    .slide_heading_gold {
+      color: #bf9d5a;
+      font-size: 36px;
+      line-height: 1;
+      letter-spacing: -1px;
+    }
+  }
+}
