@@ -30,17 +30,79 @@ h6 {
 }
 h3 {
   margin-bottom: 24px;
-  color: #fff;
   font-size: 32px;
-  text-align: center;
 }
 p {
   margin: 0;
 }
+hr {
+  border: 0;
+  height: 1px;
+  background-color: var(--text-dark);
+}
+
+// Font
 .fontHei {
   font-family: "微軟正黑體", "Microsoft JhengHei", "Century Gothic",
     CenturyGothic, AppleGothic, sans-serif;
 }
+.title {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  line-height: 1.5;
+  &__primary {
+    color: var(--primary)
+  }
+}
+.para {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  color: var(--text-dark);
+  &.white {
+    color: var(--white);
+  }
+}
+.center {
+  text-align: center;
+}
+.slide_content {
+  max-width: 520px;
+  position: absolute;
+  top: 7rem;
+  &.pos_left {
+    left: 3.5rem;
+  }
+}
+
+// Color
+.bg_primary {
+  background-color: var(--primary);
+}
+.bg_grey {
+  background-color: var(--bg-grey);
+}
+.white {
+  color: var(--white);
+}
+.text_shadow {
+  text-shadow: 3px 3px 6px var(--text-dark);
+}
+
+// Container
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  position: relative;
+}
+@media screen and (min-width: 1440px) {
+  .container {
+    max-width: 1440px;
+  }
+}
+
+// Flex
 .d_flex {
   display: flex;
   justify-content: space-between;
@@ -49,8 +111,19 @@ p {
 .justify_start {
   justify-content: flex-start;
 }
+.justify_end {
+  justify-content: flex-end;
+}
+.align_start {
+  align-items: flex-start;
+}
 .wrap {
   flex-wrap: wrap;
+}
+
+// Space
+.mr_8 {
+  margin-right: 3rem;
 }
 .mt_3 {
   margin-top: 1.5rem;
@@ -64,6 +137,24 @@ p {
 .mb_4 {
   margin-bottom: 2rem;
 }
+.mb_12 {
+  margin-bottom: 6rem;
+}
+.my_8 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.py_8 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+@media (max-width: 768px) {
+  .mb_md_0 {
+    margin-bottom: 0;
+  }
+}
+
+// Display
 .d_none {
   display: none !important;
 }
@@ -82,8 +173,5 @@ p {
     img {
       max-width: 100%;
     }
-  }
-  .mb_md_0 {
-    margin-bottom: 0;
   }
 }

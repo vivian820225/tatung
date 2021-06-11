@@ -66,6 +66,7 @@ function init() {
     loopHorizontal: false,
     autoScrolling: true,
     scrollHorizontally: true,
+    scrollOverflow: true,
     normalScrollElements: "#google_map",
     navigation: true,
   });

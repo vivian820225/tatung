@@ -9,15 +9,6 @@
   background-image: url(../images/s0bg.jpg);
   background-position: left bottom;
 }
-
-.Sec3_img {
-  height: 100vh;
-  background-image: url(../images/s3/sec3img01.jpg);
-  background-position: center center;
-}
-@media screen and (max-width: 900px) {
-}
-
 @media screen and (max-width: 768px) {
   .Sec0home_m {
     position: relative;
@@ -55,64 +46,62 @@
   }
 }
 
+// 百年職人
+.border_box {
+  margin-top: 5rem;
+  padding: .5rem;
+  color: var(--text-dark);
+  border: 1px solid var(--text-dark);
+  font-size: 1.25rem;
+}
+
+// 城市綠境 
+.Sec2_img {
+  height: 100vh;
+  img:nth-of-type(1) {
+    width: 36%;
+    position: absolute;
+    left: 0;
+    bottom: -25%;
+  }
+  img:nth-of-type(2) {
+    max-width: 720px;
+    object-fit: cover;
+  }
+}
+
+.Sec3_img {
+  height: 100vh;
+  background-image: url(../images/s3/sec3img01.jpg);
+  background-position: center center;
+}
+
+// 建築團隊
+.info {
+  max-width: 420px;
+}
+.avatar {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.work {
+  max-width: 768px;
+  object-fit: cover;
+}
+
+
+
+
+
+
+
 @media screen and (max-width: 480px) {
 }
 
 
 @media (orientation: landscape) {}
 @media (orientation: portrait) {}
-
-
-
-
-// 文字區塊
-.title {
-  &__primary {
-    color: var(--primary)
-  }
-}
-.para {
-  color: var(--text-dark);
-}
-.slide_content {
-  max-width: 460px;
-  position: absolute;
-  color: #fff;
-  top: 5rem;
-  &.pos_right {
-    right: 3.5rem;
-  }
-  &.pos_left {
-    left: 3.5rem;
-  }
-  &.pos_bottom {
-    top: initial;
-    bottom: 6rem;
-  }
-  .slide_title {
-    margin-bottom: 1.5rem;
-    font-size: 24px;
-  }
-  .slide_text {
-    font-size: 14px;
-    line-height: 1.8;
-  }
-}
-
-@media screen and (max-width: 768px)  {
-  .card_heading {
-    position: absolute;
-    bottom: 4rem;
-    left: 1.5rem;
-    .slide_heading {
-      font-size: 20px;
-      color: #fff;
-    }
-    .slide_heading_gold {
-      color: #bf9d5a;
-      font-size: 36px;
-      line-height: 1;
-      letter-spacing: -1px;
-    }
-  }
-}
