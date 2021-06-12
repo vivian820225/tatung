@@ -23,7 +23,7 @@ html {
 }
 
 body {
-  font-family: MSungHK, "微軟正黑體", "Microsoft JhengHei", "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  font-family: MSungHK, "微軟正黑體", "Microsoft JhengHei", "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
 }
 
 img {
@@ -31,7 +31,7 @@ img {
 }
 
 h1 {
-  font-family: MSungHK, "微軟正黑體", "Microsoft JhengHei", "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  font-family: MSungHK, "微軟正黑體", "Microsoft JhengHei", "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
   font-weight: 600;
   font-size: 35px;
   color: #fff;
@@ -39,7 +39,7 @@ h1 {
 }
 
 h6 {
-  font-family: MSungHK, "微軟正黑體", "Microsoft JhengHei", "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  font-family: MSungHK, "微軟正黑體", "Microsoft JhengHei", "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
   font-weight: 300;
   font-size: 16px;
   color: #fff;
@@ -61,7 +61,7 @@ hr {
 }
 
 .fontHei {
-  font-family: "微軟正黑體", "Microsoft JhengHei", "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  font-family: "微軟正黑體", "Microsoft JhengHei", "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
 }
 
 .title {
@@ -283,6 +283,14 @@ hr {
   height: 100vh;
   background-image: url(../images/s0bg.jpg);
   background-position: left bottom;
+  position: relative;
+}
+
+.Sec0home img {
+  max-height: 50%;
+  position: absolute;
+  right: 8%;
+  top: 10%;
 }
 
 @media screen and (max-width: 768px) {
@@ -292,6 +300,15 @@ hr {
     background-image: url(../images/m-s0bg.jpg);
     background-position: center 70%;
   }
+  .Sec0home_m img {
+    max-height: 50%;
+    margin: 0 auto;
+  }
+}
+
+.tatung_logo {
+  max-width: 80%;
+  margin: 0 auto;
 }
 
 .border_box {
@@ -588,24 +605,23 @@ hr {
   }
 }
 
-.img_grid {
+.Sec1_grid {
   display: -ms-grid;
   display: grid;
-  height: 100vh;
   grid-gap: 2rem;
   -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-      grid-template-areas: "G1 G1 G1 G2 G2" "G1 G1 G1 G2 G2" "G3 G3 G3 G4 G4" "G3 G3 G3 G4 G4" "G3 G3 G3 G4 G4";
+      grid-template-areas: "G1 G1 G1 G2 G2" "G1 G1 G1 G2 G2" "G3 G3 G3 G2 G2" "G3 G3 G3 G4 G4" "G3 G3 G3 G4 G4";
 }
 
-.img_grid img {
+.Sec1_grid img {
   width: 100%;
   height: auto;
 }
 
-.g1_1 {
+.Sec1_grid .g1_1 {
   -ms-grid-row: 1;
   -ms-grid-row-span: 2;
   -ms-grid-column: 1;
@@ -617,7 +633,7 @@ hr {
   z-index: -1;
 }
 
-.g1_1 img:nth-of-type(1) {
+.Sec1_grid .g1_1 img:nth-of-type(1) {
   width: 60%;
   height: auto;
   margin: 0 auto;
@@ -627,20 +643,27 @@ hr {
           transform: translateY(-20%);
 }
 
-.g1_1 img:nth-of-type(2) {
+.Sec1_grid .g1_1 img:nth-of-type(2) {
   position: absolute;
   bottom: 0;
 }
 
-.g1_2 {
+.Sec1_grid .g1_2 {
   -ms-grid-row: 1;
-  -ms-grid-row-span: 2;
+  -ms-grid-row-span: 3;
   -ms-grid-column: 4;
   -ms-grid-column-span: 2;
   grid-area: G2;
 }
 
-.g1_3 {
+.Sec1_grid .g1_2 img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.Sec1_grid .g1_3 {
   -ms-grid-row: 3;
   -ms-grid-row-span: 3;
   -ms-grid-column: 1;
@@ -648,15 +671,15 @@ hr {
   grid-area: G3;
 }
 
-.g1_4 {
-  -ms-grid-row: 3;
-  -ms-grid-row-span: 3;
+.Sec1_grid .g1_4 {
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 2;
   -ms-grid-column: 4;
   -ms-grid-column-span: 2;
   grid-area: G4;
-  max-width: 80%;
   margin: 0 auto;
-  padding-top: 50%;
+  -webkit-transform: translateY(20%);
+          transform: translateY(20%);
 }
 
 .Sec4_grid {
@@ -677,13 +700,13 @@ hr {
      object-fit: cover;
 }
 
-.p_1 {
+.Sec4_grid .p_1 {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: P1;
 }
 
-.p_2 {
+.Sec4_grid .p_2 {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   -ms-grid-column-span: 2;
@@ -720,7 +743,7 @@ hr {
   font-size: 17px;
   color: #ffffff;
   padding: 0 4px;
-  font-family: MSungHK, "微軟正黑體", "Microsoft JhengHei", "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  font-family: MSungHK, "微軟正黑體", "Microsoft JhengHei", "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
 }
 
 .footer ul li:first-of-type {
