@@ -124,6 +124,7 @@
 
 @media screen and (max-width: 520px) {
   .Sec4_grid {
+    grid-template-rows: 180px;
     gap: .25rem;
   }
 }
