@@ -23,7 +23,7 @@ html {
 }
 
 body {
-  font-family: MSungHK, "微軟正黑體", "Microsoft JhengHei", "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  font-family: MSungHK, "微軟正黑體", "Microsoft JhengHei", "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
 }
 
 img {
@@ -31,7 +31,7 @@ img {
 }
 
 h1 {
-  font-family: MSungHK, "微軟正黑體", "Microsoft JhengHei", "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  font-family: MSungHK, "微軟正黑體", "Microsoft JhengHei", "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
   font-weight: 600;
   font-size: 35px;
   color: #fff;
@@ -39,7 +39,7 @@ h1 {
 }
 
 h6 {
-  font-family: MSungHK, "微軟正黑體", "Microsoft JhengHei", "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  font-family: MSungHK, "微軟正黑體", "Microsoft JhengHei", "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
   font-weight: 300;
   font-size: 16px;
   color: #fff;
@@ -61,7 +61,7 @@ hr {
 }
 
 .fontHei {
-  font-family: "微軟正黑體", "Microsoft JhengHei", "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  font-family: "微軟正黑體", "Microsoft JhengHei", "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
 }
 
 .title {
@@ -81,7 +81,7 @@ hr {
   text-align: justify;
   line-height: 1.6;
   color: var(--text-dark);
-  font-family: "微軟正黑體", "Microsoft JhengHei", "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  font-family: "微軟正黑體", "Microsoft JhengHei", "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
 }
 
 .para.white {
@@ -664,7 +664,9 @@ hr {
 }
 
 .Sec7_B2 img:nth-of-type(1) {
-  max-height: 50%;
+  max-height: 480px;
+  margin: 0 auto;
+  margin-bottom: 1rem;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -704,8 +706,8 @@ hr {
 .Sec7_B4 {
   background-image: url(../images/s7/sec7img04-1.png);
   background-repeat: no-repeat;
-  background-position: 10% 150%;
-  background-size: 55% auto;
+  background-position: 10% bottom;
+  background-size: auto 90%;
 }
 
 .Sec7_B4 .content {
@@ -1145,7 +1147,7 @@ hr {
       grid-template-columns: 3fr 2fr;
   -ms-grid-rows: 2fr 3fr;
       grid-template-rows: 2fr 3fr;
-      grid-template-areas: "G1 G2" "G3 G4";
+      grid-template-areas: "G1 G2" "G3 G4";
 }
 
 .Sec1_grid img {
@@ -1219,7 +1221,7 @@ hr {
         grid-template-columns: 1fr 1fr;
     -ms-grid-rows: .5fr 1fr .8fr;
         grid-template-rows: .5fr 1fr .8fr;
-        grid-template-areas: "G1 G1" "G3 G2" "G4 G4";
+        grid-template-areas: "G1 G1" "G3 G2" "G4 G4";
   }
   .Sec1_grid .g1_1 img:nth-of-type(1) {
     width: 320px;
@@ -1392,7 +1394,7 @@ hr {
   font-size: 17px;
   color: #ffffff;
   padding: 0 4px;
-  font-family: MSungHK, "微軟正黑體", "Microsoft JhengHei", "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  font-family: MSungHK, "微軟正黑體", "Microsoft JhengHei", "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
 }
 
 .footer ul li:first-of-type {
