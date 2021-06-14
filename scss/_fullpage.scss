@@ -6,27 +6,40 @@
   background: #ffffff;
 }
 .fp-controlArrow.fp-next {
-  // background-image: url("../images/Fillet_Right.png");
+  background-image: url("../images/arrow-green.svg");
+  background-repeat: no-repeat;
+  background-size: 32px 32px;
+  background-position: center;
   border: none;
   width: 52px;
   height: 150px;
-  opacity: 0.5;
-  right: 0;
+  opacity: 1;
 }
 
 .fp-controlArrow.fp-prev {
-  // background-image: url("../images/Fillet_Left.png");
+  background-image: url("../images/arrow-green.svg");
+  background-repeat: no-repeat;
+  background-size: 32px 32px;
+  background-position: center;
   border: none;
   width: 52px;
   height: 150px;
-  opacity: 0.5;
-  left: 0;
+  opacity: 1;
+  left: 15px;
+  transform: rotate(180deg);
 }
 .fp-controlArrow.fp-next:hover {
-  opacity: 1;
+  opacity: .5;
 }
 .fp-controlArrow.fp-prev:hover {
-  opacity: 1;
+  opacity: .5;
+}
+
+.bg_primary {
+  .fp-controlArrow.fp-next, 
+  .fp-controlArrow.fp-prev {
+    background-image: url("../images/arrow-white.svg");
+  }
 }
 
 @media screen and (max-width: 1280px) {
@@ -41,5 +54,15 @@
 @media screen and (max-width: 768px) {
   #fp-nav {
     display: none;
+  }
+  .fp-controlArrow.fp-next {
+    width: 32px;
+    background-size: 24px 24px;
+    right: 0;
+  }
+  .fp-controlArrow.fp-prev {
+    width: 32px;
+    background-size: 24px 24px;
+    left: 0;
   }
 }

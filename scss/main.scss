@@ -1,5 +1,5 @@
 :root {
-	--primary: #00853c;
+	--primary: #008D5A;
 	--white: #ffffff;
 	--text-dark: #595959;
 	--bg-grey: #d4d4d4;
@@ -8,6 +8,7 @@
   font-family: MSungHK;
   src: url(../font/MSungHK-Medium.otf);
 }
+@import "_mixin.scss";
 @import "_utilities.scss";
 @import "_fullpage.scss";
 @import "_section.scss";
