@@ -121,20 +121,12 @@
     img:nth-of-type(1) {
       max-width: 80px;
       left: 1rem;
-<<<<<<< HEAD
       transform: translateY(-50%);
     }
     img:nth-of-type(2)  {
       width: 100%;
       max-height: 200px;
       object-position: top;
-=======
-      transform: translateY(-70%);
-    }
-    img:nth-of-type(2)  {
-      width: 100%;
-      max-height: 160px;
->>>>>>> da408bdf010f4b383e62325ff74a4f529d0a9b83
     }
   }
 }
@@ -458,11 +450,7 @@
   }
 
   .Sec7_B5 {
-<<<<<<< HEAD
     background-size: 80% auto;
-=======
-    background-size: 90% auto;
->>>>>>> da408bdf010f4b383e62325ff74a4f529d0a9b83
     background-position: center 80px;
     .content {
       justify-content: flex-start;
