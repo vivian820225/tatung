@@ -23,7 +23,7 @@ html {
 }
 
 body {
-  font-family: MSungHK, "微軟正黑體", "Microsoft JhengHei", "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  font-family: MSungHK, "微軟正黑體", "Microsoft JhengHei", "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
 }
 
 img {
@@ -31,7 +31,7 @@ img {
 }
 
 h1 {
-  font-family: MSungHK, "微軟正黑體", "Microsoft JhengHei", "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  font-family: MSungHK, "微軟正黑體", "Microsoft JhengHei", "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
   font-weight: 600;
   font-size: 35px;
   color: #fff;
@@ -39,7 +39,7 @@ h1 {
 }
 
 h6 {
-  font-family: MSungHK, "微軟正黑體", "Microsoft JhengHei", "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  font-family: MSungHK, "微軟正黑體", "Microsoft JhengHei", "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
   font-weight: 300;
   font-size: 16px;
   color: #fff;
@@ -61,7 +61,7 @@ hr {
 }
 
 .fontHei {
-  font-family: "微軟正黑體", "Microsoft JhengHei", "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  font-family: "微軟正黑體", "Microsoft JhengHei", "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
 }
 
 .title {
@@ -77,11 +77,11 @@ hr {
 .para {
   max-width: 1100px;
   margin: 0 auto;
-  font-size: 1.25rem;
+  font-size: 1.05rem;
   text-align: justify;
   line-height: 1.6;
   color: var(--text-dark);
-  font-family: "微軟正黑體", "Microsoft JhengHei", "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  font-family: "微軟正黑體", "Microsoft JhengHei", "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
 }
 
 .para.white {
@@ -461,7 +461,9 @@ hr {
   }
   .Sec2_img img:nth-of-type(2) {
     width: 80%;
-    max-height: 520px;
+    max-height: 400px;
+    -o-object-position: top;
+       object-position: top;
   }
 }
 
@@ -481,8 +483,6 @@ hr {
   .Sec2_img img:nth-of-type(2) {
     width: 100%;
     max-height: 200px;
-    -o-object-position: top;
-       object-position: top;
   }
 }
 
@@ -509,6 +509,10 @@ hr {
     left: initial;
     text-align: center;
   }
+}
+
+.Sec5 .container img {
+  max-height: 90%;
 }
 
 @media screen and (max-width: 1280px) {
@@ -657,6 +661,12 @@ hr {
 
 .Sec7_B2 .content {
   max-width: 630px;
+}
+
+.Sec7_B2 img:nth-of-type(1) {
+  max-height: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .Sec7_B2 img:nth-of-type(2) {
@@ -1135,7 +1145,7 @@ hr {
       grid-template-columns: 3fr 2fr;
   -ms-grid-rows: 2fr 3fr;
       grid-template-rows: 2fr 3fr;
-      grid-template-areas: "G1 G2" "G3 G4";
+      grid-template-areas: "G1 G2" "G3 G4";
 }
 
 .Sec1_grid img {
@@ -1209,7 +1219,7 @@ hr {
         grid-template-columns: 1fr 1fr;
     -ms-grid-rows: .5fr 1fr .8fr;
         grid-template-rows: .5fr 1fr .8fr;
-        grid-template-areas: "G1 G1" "G3 G2" "G4 G4";
+        grid-template-areas: "G1 G1" "G3 G2" "G4 G4";
   }
   .Sec1_grid .g1_1 img:nth-of-type(1) {
     width: 320px;
@@ -1272,6 +1282,7 @@ hr {
 .Sec4_grid img {
   width: 100%;
   height: 100%;
+  max-height: 420px;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -1381,7 +1392,7 @@ hr {
   font-size: 17px;
   color: #ffffff;
   padding: 0 4px;
-  font-family: MSungHK, "微軟正黑體", "Microsoft JhengHei", "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  font-family: MSungHK, "微軟正黑體", "Microsoft JhengHei", "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
 }
 
 .footer ul li:first-of-type {
