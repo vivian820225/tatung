@@ -192,6 +192,14 @@
     }
   }
 }
+@media screen and (max-width: 520px) {
+  .Sec4 {
+    .img {
+      margin: 0 auto;
+      max-width: 240px;
+    }
+  }
+}
 
 // 快意馳騁
 .Sec5 {
@@ -511,6 +519,9 @@
     }
   }
   .Sec7_B5 {
+    .title {
+      margin-top: 0;
+    }
     .img {
       max-width: 100%;
       max-height: 320px;
@@ -546,6 +557,11 @@
   .map,
   .reservation {
     flex: 1 1 60%;
+  }
+  .contact_us {
+    a {
+      color: var(--white);
+    }
   }
   .basic_info {
     .para {

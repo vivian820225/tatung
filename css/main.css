@@ -570,6 +570,13 @@ hr {
   }
 }
 
+@media screen and (max-width: 520px) {
+  .Sec4 .img {
+    margin: 0 auto;
+    max-width: 240px;
+  }
+}
+
 .Sec5 {
   background-image: url(../images/s5/bg.png);
   background-repeat: no-repeat;
@@ -950,6 +957,9 @@ hr {
   .Sec7_B3 .para.fixed::after {
     width: 32px;
   }
+  .Sec7_B5 .title {
+    margin-top: 0;
+  }
   .Sec7_B5 .img {
     max-width: 100%;
     max-height: 320px;
@@ -993,6 +1003,10 @@ hr {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 60%;
           flex: 1 1 60%;
+}
+
+.Sec9 .contact_us a {
+  color: var(--white);
 }
 
 .Sec9 .basic_info .para {
