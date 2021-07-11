@@ -14,23 +14,12 @@
     grid-area: G1;
     position: relative;
     z-index: -1;
-    img:nth-of-type(1) {
-      width: 60%;
-      height: auto;
-      margin: 0 auto;
-      position: relative;
-      z-index: 1;
-    }
-    img:nth-of-type(2) {
-      position: absolute;
-      bottom: 0;
-    } 
   }
   .g1_2 {
     grid-area: G2;
     width: 100%;
     object-fit: cover;
-    object-position: center 4rem;
+    object-position: center 2rem;
   }
   .g1_3 {
     grid-area: G3;
@@ -46,64 +35,38 @@
     justify-content: flex-end;
   }
 }
-
 @media screen and (max-width: 1280px) {
   .Sec1_grid {
-    gap: 0;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: .5fr 1fr .8fr;
-    grid-template-areas:
-      "G1 G1"
-      "G3 G2"
-      "G4 G4";
-    .g1_1 {
-      img:nth-of-type(1) {
-        width: 320px;
-        transform: translateY(15%);
+    gap: 1rem;
+    .g1_4 {
+        height: 75%;
       }
-      img:nth-of-type(2) {
-        bottom: -20%;
-      } 
-    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .Sec1_grid {
+    gap: 0;
+    display: flex;
+    flex-direction: column;
     .g1_2 {
-      height: 100%;
-      object-position: center center;
+      order: -3;
     }
     .g1_3 {
-      height: 100%;
-      object-fit: cover;
       transform: initial;
     }
     .g1_4 {
-      height: auto;
-      justify-content: center;
-    }
-  }
-}
-
-@media screen and (max-width: 520px)  {
-  .Sec1_grid {
-    grid-template-rows: 180px 128px 1fr;
-    .g1_1 {
-      img:nth-of-type(1) {
-        max-width: 160px;
-      }
-      img:nth-of-type(2) {
-        bottom: -10%;
-      }
-    }
-    .g1_4 {
+      order: -2;
       max-width: 100%;
-      .title {
-        margin-top: 1rem;
-      }
+      height: auto;
+      padding-top: 6rem;
+      padding-bottom: 2rem;
     }
   }
 }
 
 .Sec4_grid {
 	display: grid;
-  gap: 1rem;
+  gap: .5rem;
   grid-template-columns: 1fr 2fr;
 	grid-template-rows: 1fr;
 	grid-template-areas:
@@ -120,13 +83,6 @@
   }
   .p_2 {
     grid-area: P2;
-  }
-}
-
-@media screen and (max-width: 520px) {
-  .Sec4_grid {
-    grid-template-rows: 180px;
-    gap: .25rem;
   }
 }
 

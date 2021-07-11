@@ -115,18 +115,32 @@ hr {
 }
 
 // Container
-.container {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  position: relative;
-}
-@media screen and (min-width: 1440px) {
+#fullpage {
   .container {
-    max-width: 1440px;
+    margin: 0 auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    position: relative;
   }
 }
+@media (min-width: 1440px) {
+  #fullpage {
+    .container {
+      max-width: 1440px;
+    }
+  }
+}
+@media (min-width: 1200px),
+       (min-width: 992px),
+       (min-width: 768px) {
+  #fullpage {
+    .container {
+      width: auto;
+    }
+  }
+}
+
+
 
 // Flex
 .d_flex {
@@ -201,6 +215,14 @@ hr {
 .d_none {
   display: none !important;
 }
+@media (max-width: 1280px){
+  .d_lg_none {
+    display: none !important;
+  }
+  .d_lg_block {
+    display: block !important;
+  }
+}
 @media (max-width: 768px) {
   .d_md_none {
     display: none !important;
@@ -210,6 +232,9 @@ hr {
     img {
       max-width: 100%;
     }
+  }
+  .d_md_inline {
+    display: inline-block !important;
   }
   .d_md_table {
     display: table !important;
