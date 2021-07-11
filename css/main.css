@@ -115,7 +115,7 @@ hr {
     letter-spacing: -2px;
   }
   .para {
-    font-size: 1rem;
+    font-size: 14px;
     text-align: justify;
     letter-spacing: -1px;
   }
@@ -575,12 +575,13 @@ hr {
   background-repeat: no-repeat;
 }
 
-.Sec5 .container img {
-  max-height: 90%;
+.Sec5 .d_flex {
+  max-width: 1280px;
+  margin: 0 auto;
 }
 
 @media screen and (max-width: 1280px) {
-  .Sec5 .container {
+  .Sec5 .d_flex {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
@@ -590,7 +591,10 @@ hr {
             flex-direction: column-reverse;
     text-align: center;
   }
-  .Sec5 .container .img {
+  .Sec5 .content {
+    padding: 0 2rem;
+  }
+  .Sec5 .img {
     width: 100%;
     max-width: 768px;
     max-height: 480px;
@@ -610,7 +614,7 @@ hr {
   .Sec5 .container {
     padding: 0;
   }
-  .Sec5 .container .img {
+  .Sec5 .img {
     width: 100%;
     margin-top: 1rem;
   }

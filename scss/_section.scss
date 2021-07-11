@@ -197,27 +197,29 @@
 .Sec5 {
   background-image: url(../images/s5/bg.png);
     background-repeat: no-repeat;
-  .container {
-    img {
-      max-height: 90%;
-    }
+  .d_flex {
+    max-width: 1280px;
+    margin: 0 auto;
   }
 }
 @media screen and (max-width: 1280px) {
   .Sec5 {
-    .container {
+    .d_flex {
       justify-content: flex-start;
       flex-direction: column-reverse;
       text-align: center;
-      .img {
-        width: 100%;
-        max-width: 768px;
-        max-height: 480px;
-        margin-right: 0;
-        margin-top: 2rem;
-        object-fit: cover;
-        object-position: bottom;
-      }
+    }
+    .content {
+      padding: 0 2rem;
+    }
+    .img {
+      width: 100%;
+      max-width: 768px;
+      max-height: 480px;
+      margin-right: 0;
+      margin-top: 2rem;
+      object-fit: cover;
+      object-position: bottom;
     }
   }
 }
@@ -226,10 +228,10 @@
     background-image: url(../images/s5/m-bg.png);
     .container {
       padding: 0;
-      .img {
-        width: 100%;
-        margin-top: 1rem;
-      }
+    }
+    .img {
+      width: 100%;
+      margin-top: 1rem;
     }
   }
 }
