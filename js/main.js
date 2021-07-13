@@ -69,6 +69,8 @@ $(document).ready(function () {
     },
   });
   window.addEventListener("resize", function () {
-    fullpage_api.reBuild();
+    setTimeout(function () {
+      this.location.reload();
+    });
   });
 });
