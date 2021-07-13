@@ -1,10 +1,16 @@
 #fp-nav {
   top: inherit;
   bottom: 50px;
+  right: 1rem;
 }
 #fp-nav ul li a span {
   background: #ffffff;
 }
+#fp-nav ul li a span.fp-sr-only, 
+.fp-slidesNav ul li a span.fp-sr-only {
+  display: none;
+}
+
 .fp-controlArrow.fp-next {
   background-image: url("../images/arrow-green.svg");
   background-repeat: no-repeat;

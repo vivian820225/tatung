@@ -14,6 +14,8 @@
   <link rel="shortcut icon" type="image/x-icon" href="">
   <link rel="stylesheet" type="text/css" href="css/reset.css" media="all" />
   <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="panorama360/panorama360.css" media="all" />
   <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
   <link rel="stylesheet" type="text/css" href="css/main.min.css" media="all" />
 </head>
@@ -43,7 +45,16 @@
             <img src="images/s1/sec1img03.png" alt="">
           </div>
           <img class="g1_2" src="images/s1/sec1img01.jpg" alt="">
-          <img class="g1_3" src="images/s1/sec1img02.jpg" alt="">
+          <div class="g1_3">
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="images/s1/sec1img02.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="images/s1/sec1img02-2.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="images/s1/sec1img02-3.jpg" alt=""></div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
           <div class="g1_4">
             <h2 class="title title__primary center">
               手感建築從「心」出發<br/>
@@ -78,15 +89,29 @@
         </div>
       </div>
     </section>
+    <!-- 空拍 -->
+    <section class="section">
+      <div class="Sec3_img360"></div>
+      <div class="view360 slide">
+        <div class="p360">
+          <div class="panorama">
+            <div class="preloader"></div>
+            <div class="panorama-view">
+              <div class="panorama-container"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <section class="section">
       <div class="slide">
         <div class="Sec_img Sec3_img">
           <img class="d_none d_md_block" src="images/s3/m-sec3img01.jpg" alt="">
-          <div class="slide_content pos_left">
-            <h2 class="title white text_shadow">
+          <div class="slide_content">
+            <h2 class="title white">
               大面開窗 迎綠入室 大棟距遼闊視野
             </h2>
-            <p class="para white text_shadow">
+            <p class="para white">
               大面開窗、迎綠入室，下樓就是2,330坪私人中庭大花園，廣植多種喬、灌木，創造生態、節能、減碳、健康的微氣候調節，打造優質永續環境，縱情享受綠逸森活。
             </p>
           </div>
@@ -223,8 +248,25 @@
               代表作品：東京羽田國際機場第二航廈、Cartier、Chloé、De Beers東京品牌旗艦店、美國洛杉磯777 Tower大廈、新板特區謙岳
             </p>
           </div>
-          <img class="work d_md_none" src="images/s6/sec6img01-2.jpg" alt="">
-          <img class="work d_none d_md_block" src="images/s6/m-sec6img01.jpg" alt="">
+          <div class="work">
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img class="work d_md_none" src="images/s6/sec6img01-2.jpg" alt="">
+                  <img class="work d_none d_md_block" src="images/s6/m-sec6img01.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img class="work d_md_none" src="images/s6/sec6img01-3.jpg" alt="">
+                  <img class="work d_none d_md_block" src="images/s6/m-sec6img01-2.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img class="work d_md_none" src="images/s6/sec6img01-4.jpg" alt="">
+                  <img class="work d_none d_md_block" src="images/s6/m-sec6img01-3.jpg" alt="">
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
         </div>
       </div>
       <div class="slide">
@@ -265,8 +307,25 @@
               代表作品：日本清水寺、日本金閣寺、日本六本木之丘、東京巨蛋、東京表參道、新板特區謙岳。
             </p>
           </div>
-          <img class="work d_md_none" src="images/s6/sec6img03-2.jpg" alt="">
-          <img class="work d_none d_md_block" src="images/s6/m-sec6img03.jpg" alt="">
+          <div class="work">
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img class="work d_md_none" src="images/s6/sec6img03-2.jpg" alt="">
+                  <img class="work d_none d_md_block" src="images/s6/m-sec6img03.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img class="work d_md_none" src="images/s6/sec6img03-3.jpg" alt="">
+                  <img class="work d_none d_md_block" src="images/s6/m-sec6img03-2.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img class="work d_md_none" src="images/s6/sec6img03-4.jpg" alt="">
+                  <img class="work d_none d_md_block" src="images/s6/m-sec6img03-3.jpg" alt="">
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
         </div>
       </div>
       <div class="slide">
@@ -365,11 +424,11 @@
             <p class="para white">
               柱內灌漿工法(Concrete Filled in Tube, 簡稱CFT)，即在箱型鋼柱內預留灌漿孔，灌入高強度混凝土，利用其高抗壓特性，使原韌性強的SS鋼骨結構得以提高勁度，而整體結構受地震力時位移量降低，不易搖晃受損，增加舒適性。
             </p>
+            <p class="para white square">
+              由上向下的逆地心引力高壓灌漿方式將空氣擠壓而出，避免形成空氣滯留結構柱內產生空洞不實。
+            </p>
           </div>
         </div>
-        <p class="para white fixed">
-          由上向下的逆地心引力高壓灌漿方式將空氣擠壓而出，避免形成空氣滯留結構柱內產生空洞不實。
-        </p>
       </div>
       <div class="slide Sec7_B4">
         <div class="container d_flex">
@@ -607,11 +666,14 @@
 
 
   <script src="js/jquery.min.js"></script>
-  <script src="js/scrolloverflow.js"></script>
+  <script src="js/scrolloverflow.min.js"></script>
   <script src="js/jquery.fullPage.js"></script>
+  <script src="panorama360/jquery.mousewheel.min.js"></script>
+  <script src="panorama360/jquery.panorama360.js"></script>
   <script src="js/js.cookie.min.js"></script>
   <script src="js/jquery.confirm.min.js"></script>
   <script src="js/jquery.twzipcode.min.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="js/main.js"></script>
 
   <script>
@@ -669,7 +731,6 @@
           }
         }
       });
-
     }
 
     //ziv add 2017/8/7
