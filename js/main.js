@@ -21,7 +21,7 @@ function checkImgOnload() {
     $(".panorama-view").panorama360({
       sliding_controls: false,
       bind_resize: true,
-      start_position: 380,
+      start_position: 100,
     });
   };
 }

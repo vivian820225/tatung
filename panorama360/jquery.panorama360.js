@@ -52,7 +52,7 @@
 			}
 			if (settings.is360) viewportImage.removeAttr("usemap").css("left", 0).clone().css("left", elem_width + "px").insertAfter(viewportImage);
 			panoramaContainer.css({
-				'margin-left': '-' + settings.start_position + 'px',
+				'margin-left': '-' + settings.start_position + '%',
 				'width': (elem_width * 2) + 'px',
 				'height': (elem_height) + 'px'
 			});
