@@ -13,11 +13,7 @@ function onImageLoaded(url, cb) {
 function checkImgOnload() {
   const panoramaSection = document.querySelector(".panorama-container");
   let image = new Image();
-  if (innerWidth <= 768) {
-    image.src = "images/s3/m-sec3-360.jpg";
-  } else {
-    image.src = "images/s3/sec3-360.jpg";
-  }
+  image.src = "images/s3/sec3-360.jpg";
   image.onload = function () {
     onImageLoaded(`${image.src}`, function () {
       panoramaSection.innerHTML = `<img src="${image.src}" data-width="${image.width}" data-height="${image.height}" alt="Panorama">`;
@@ -25,6 +21,7 @@ function checkImgOnload() {
     $(".panorama-view").panorama360({
       sliding_controls: false,
       bind_resize: true,
+      start_position: 380,
     });
   };
 }

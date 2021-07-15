@@ -167,7 +167,7 @@
   }
   .Sec3_img360 {
     height: 100vh;
-    background-image: url(../images/s3/m-sec3-360.jpg);
+    background-image: url(../images/s3/sec3-360.jpg);
     background-position: right -40px;
   }
 }
@@ -181,7 +181,6 @@
     background-position: center;
   }
 }
-
 @media (orientation: portrait) {
   .view360.slide {
     display: table;
