@@ -1071,8 +1071,46 @@ hr {
   color: var(--white);
 }
 
+.Sec9 .contact_us a.phone {
+  display: block;
+  margin-bottom: 24px;
+}
+
 .Sec9 .basic_info .para {
   line-height: 2;
+}
+
+.Sec9 .icon-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 200px;
+}
+
+.Sec9 .icon, .Sec9 .icon-facebook, .Sec9 .icon-map, .Sec9 .icon-line {
+  display: block;
+  width: 48px;
+  height: 48px;
+  margin-right: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.Sec9 .icon-facebook {
+  background-image: url(../images/icon-facebook.png);
+}
+
+.Sec9 .icon-map {
+  background-image: url(../images/icon-location.png);
+}
+
+.Sec9 .icon-line {
+  margin-right: 0;
+  background-image: url(../images/icon-line.png);
 }
 
 @media screen and (max-width: 992px) {
@@ -1089,6 +1127,12 @@ hr {
   .Sec9 .para {
     text-align: center;
   }
+  .Sec9 .icon-group {
+    max-width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
   .Sec9 .contact_us,
   .Sec9 .basic_info,
   .Sec9 .map,
@@ -1099,6 +1143,10 @@ hr {
     width: 100%;
     max-width: 100%;
     margin-bottom: 2rem;
+  }
+  .Sec9 .icon, .Sec9 .icon-facebook, .Sec9 .icon-map, .Sec9 .icon-line {
+    width: 40px;
+    height: 40px;
   }
 }
 

@@ -566,6 +566,7 @@
   }
 }
 
+// 立即預約
 .Sec9 {
   background-image: url(../images//s9/bg.png);
   background-repeat: no-repeat;
@@ -585,11 +586,42 @@
   .contact_us {
     a {
       color: var(--white);
+      &.phone {
+        display: block;
+        margin-bottom: 24px;
+      }
     }
   }
   .basic_info {
     .para {
       line-height: 2;
+    }
+  }
+  .icon-group {
+    display: flex;
+    align-items: center;
+    max-width: 200px;
+  }
+  .icon {
+    display: block;
+    width: 48px;
+    height: 48px;
+    margin-right: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    &-facebook {
+      @extend .icon;
+      background-image: url(../images/icon-facebook.png);
+    }
+    &-map {
+      @extend .icon;
+      background-image: url(../images/icon-location.png);
+    }
+    &-line {
+      @extend .icon;
+      margin-right: 0;
+      background-image: url(../images/icon-line.png);
     }
   }
 }
@@ -603,6 +635,10 @@
     .para {
       text-align: center;
     }
+    .icon-group {
+      max-width: 100%;
+      justify-content: center;
+    }
     .contact_us, 
     .basic_info,
     .map,
@@ -611,6 +647,10 @@
       width: 100%;
       max-width: 100%;
       margin-bottom: 2rem;
+    }
+    .icon {
+      width: 40px;
+      height: 40px;
     }
   }
 }
